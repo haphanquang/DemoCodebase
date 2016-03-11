@@ -7,3 +7,24 @@
 //
 
 import Foundation
+
+typealias PreProcessingCallback = () -> ()
+typealias SuccessProcessingCallback = (Any) -> ()
+typealias FailureCallback = (ErrorType) -> ()
+
+class BaseUseCase {
+    
+    var preExecutor: PreProcessingCallback
+    var successExecutor: SuccessProcessingCallback
+    var failureExecutor: FailureCallback
+    
+    init(pre preExecutor: PreProcessingCallback, successExecutor: SuccessProcessingCallback, failureExecutor: FailureCallback) {
+        self.preExecutor = preExecutor
+        self.successExecutor = successExecutor
+        self.failureExecutor = failureExecutor
+    }
+    
+    func start() {
+        
+    }
+}

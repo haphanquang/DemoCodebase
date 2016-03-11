@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+protocol ContactListView {
+    func beginDownloadingContact()
+    func finishDownloadingContact()
+    func beginGettingContact()
+    func finishGettingContact()
+}

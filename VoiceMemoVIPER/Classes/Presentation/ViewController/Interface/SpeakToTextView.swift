@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+protocol SpeechToTextView {
+    func beginGenerateText()
+    func completeGenerateText(result: String)
+}

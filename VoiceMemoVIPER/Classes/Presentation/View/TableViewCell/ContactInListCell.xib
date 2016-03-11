@@ -1,15 +1,74 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-        </view>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactInListCell" rowHeight="50" id="8JM-51-rbR" customClass="ContactInListCell" customModule="VoiceMemoVIPER" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8JM-51-rbR" id="W5m-XN-Mgh">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMi-vG-2qm">
+                        <rect key="frame" x="10" y="14" width="32" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="82O-50-DDb"/>
+                            <constraint firstAttribute="width" constant="32" id="H91-CX-FFq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nguyen Van A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvt-c2-fLh">
+                        <rect key="frame" x="50" y="14" width="172" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="6af-4L-3ya"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fv7-mq-iDd">
+                        <rect key="frame" x="230" y="9" width="43" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Hc4-uJ-aoY"/>
+                            <constraint firstAttribute="width" constant="43" id="p35-rg-t5W"/>
+                        </constraints>
+                        <state key="normal" title="sound"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGZ-aM-vHJ">
+                        <rect key="frame" x="282" y="9" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="JhY-av-Vll"/>
+                            <constraint firstAttribute="width" constant="30" id="oSl-7g-mE9"/>
+                        </constraints>
+                        <state key="normal" title="del"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="aGZ-aM-vHJ" secondAttribute="trailing" constant="8" id="DGR-im-mo1"/>
+                    <constraint firstItem="vMi-vG-2qm" firstAttribute="leading" secondItem="W5m-XN-Mgh" secondAttribute="leading" constant="10" id="Fel-ra-MSm"/>
+                    <constraint firstItem="Fv7-mq-iDd" firstAttribute="leading" secondItem="dvt-c2-fLh" secondAttribute="trailing" constant="8" id="SL6-n2-CV2"/>
+                    <constraint firstItem="aGZ-aM-vHJ" firstAttribute="centerY" secondItem="W5m-XN-Mgh" secondAttribute="centerY" id="Scs-My-mjD"/>
+                    <constraint firstItem="vMi-vG-2qm" firstAttribute="centerY" secondItem="W5m-XN-Mgh" secondAttribute="centerY" id="Wd7-Zs-INe"/>
+                    <constraint firstItem="Fv7-mq-iDd" firstAttribute="centerY" secondItem="W5m-XN-Mgh" secondAttribute="centerY" id="XE3-mc-WHv"/>
+                    <constraint firstItem="dvt-c2-fLh" firstAttribute="centerY" secondItem="W5m-XN-Mgh" secondAttribute="centerY" id="Z6H-66-FaY"/>
+                    <constraint firstItem="aGZ-aM-vHJ" firstAttribute="leading" secondItem="Fv7-mq-iDd" secondAttribute="trailing" constant="9" id="d9q-1c-fGd"/>
+                    <constraint firstItem="dvt-c2-fLh" firstAttribute="leading" secondItem="vMi-vG-2qm" secondAttribute="trailing" constant="8" id="nJq-sP-y1e"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnDelete" destination="aGZ-aM-vHJ" id="y6M-WO-mcV"/>
+                <outlet property="btnPreviewSound" destination="Fv7-mq-iDd" id="0qP-Jt-geC"/>
+                <outlet property="lblName" destination="dvt-c2-fLh" id="94A-vn-UOf"/>
+                <outlet property="lblOrder" destination="vMi-vG-2qm" id="Gkq-88-PGj"/>
+            </connections>
+            <point key="canvasLocation" x="310" y="147"/>
+        </tableViewCell>
     </objects>
 </document>

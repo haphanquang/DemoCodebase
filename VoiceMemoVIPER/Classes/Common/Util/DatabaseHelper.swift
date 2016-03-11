@@ -7,3 +7,8 @@
 //
 
 import Foundation
+import FMDB
+
+class DatabaseHelper {
+    
+}

@@ -7,3 +7,13 @@
 //
 
 import Foundation
+import UIKit
+
+class ContactListWireFrame {
+    var addContactWireframe: AddContactWireframe?
+    var rootWireframe: RootWireframe?
+    
+    func showListAsRoot(window: UIWindow) {
+        
+    }
+}

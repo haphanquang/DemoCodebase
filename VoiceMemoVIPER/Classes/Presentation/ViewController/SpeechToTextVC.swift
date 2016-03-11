@@ -7,3 +7,16 @@
 //
 
 import Foundation
+import UIKit
+
+class SpeechToTextVC: UIViewController, SpeechToTextView {
+    
+    func beginGenerateText() {
+        
+    }
+    
+    func completeGenerateText(result: String) {
+        
+    }
+    
+}

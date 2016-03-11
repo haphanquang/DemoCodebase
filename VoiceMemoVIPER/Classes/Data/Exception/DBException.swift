@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+enum DBError: ErrorType {
+    case CannotOpenDatabase
+    case CannotQuery
+    case CannotUpdateDatabase
+}

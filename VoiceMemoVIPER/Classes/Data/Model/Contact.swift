@@ -7,3 +7,22 @@
 //
 
 import Foundation
+import ObjectMapper
+
+class Contact: Mappable {
+    var id: Int?
+    var text: String?
+    var soundPath: String?
+    var number: String?
+ 
+    required init?(_ map: Map) {
+        
+    }
+    
+    func mapping(map: Map) {
+        id <- map["id"]
+        text <- map["text"]
+        soundPath <- map["sound_path"]
+        number <- map ["number"]
+    }
+}
